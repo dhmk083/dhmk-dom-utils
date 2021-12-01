@@ -1,0 +1,33 @@
+#data {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 50%;
+}
+
+#items {
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 3rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  transition: all 2s;
+  background: steelblue;
+  color: gold;
+}
+
+.enter {
+  opacity: 0;
+  background: lime;
+}
+
+.exit {
+  opacity: 0;
+  background: tomato;
+}

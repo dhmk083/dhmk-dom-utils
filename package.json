@@ -1,0 +1,30 @@
+{
+  "name": "@dhmk/dom-utils",
+  "version": "0.0.1",
+  "description": "A collection of DOM related utils.",
+  "keywords": [
+    "dom",
+    "utils"
+  ],
+  "license": "MIT",
+  "repository": "github:dhmk083/dhmk-dom-utils",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "module": "esm/index.js",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "esm"
+  ],
+  "scripts": {
+    "preversion": "yarn test && yarn build",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags",
+    "clean": "rm -rf lib esm",
+    "build": "yarn clean && tsc && tsc -m esnext --outDir esm",
+    "test": "true"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
+}
